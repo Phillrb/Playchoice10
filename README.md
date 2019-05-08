@@ -50,6 +50,14 @@ e.g. Making a 'Balloon Fight' conversion for a hosting 'Golf' cartridge:
 
 A new .BIN file will be created called 'files/converted/BALLOON_FIGHT.BIN' 
 ```
+## Steps taken
+PC10 will
+* Copy '.BIN' file to memory
+* Extract 'security.prom' from zipped host ROM
+* Trim '.BIN' data to fit an eprom
+* Calculate the checksum for the eprom & host prom combination
+* Alter the last byte in the '.BIN' data to make the checksum balance
+* Write the '.BIN' data to a new 'converted' file
 
 ## Links
 * KLOV thread: https://forums.arcade-museum.com/showthread.php?t=350798
