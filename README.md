@@ -19,6 +19,7 @@ Steps:
 * A new '.bin' file will be created in the 'converted' directory
 * Burn the image to a 27c64 eprom and place in U3
 * Replace U1 and U2 with a suitable target game
+* Place solder at solder points SL1, SL2 & SL3 as necessary (see compatibility list)
 
 ## Background
 Supported Playchoice 10 games have 3 Eproms and a serial prom. U1 and U2 are the game code eproms, U3 is the instruction eprom, and the serial prom is a tiny security IC. The Playchoice 10 bios calculates a checksum between the data held in U3 and the prom. The checksum can be calculated for any combination or prom and instruction rom.
