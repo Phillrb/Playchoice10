@@ -98,3 +98,6 @@ https://github.com/richgel999/miniz
 NO$NES:
 NO$NES (c) Martin Korth
 https://problemkaputt.de/nes.htm
+
+## Thanks
+A big thanks to @GadgetFreak on UKVAC for his MAME debugging skills and initial code submissions
