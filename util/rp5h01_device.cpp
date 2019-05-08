@@ -1,3 +1,14 @@
+// Original source from:
+// https://github.com/mamedev/mame/blob/master/src/devices/machine/rp5h01.cpp
+// license:BSD-3-Clause
+// copyright-holders:Nicola Salmoria
+
+// Original source from:
+// https://github.com/mamedev/mame/blob/master/src/mame/machine/playch10.cpp
+// license:BSD-3-Clause
+// copyright-holders:Ernesto Corvi,Brad Oliver
+
+// Minor alterations for 'PC10' by @NES4Life
 
 #include "rp5h01_device.h"
 #include "../util/util.h"
