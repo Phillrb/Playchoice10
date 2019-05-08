@@ -14,9 +14,9 @@ Steps:
 * Use NO$NES to assemble a '.bin' ROM file
 * Copy the '.bin' file in the 'files' directory
 * Source the official ROM file for the hosting cart (dump it yourself or be careful when downloading it)
-** Copy the ROM ZIP to the 'files' directory
+  * Copy the ROM ZIP to the 'files' directory
 * Run ./PC10.out from the command line (tested on macOS)
-** ./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip
+  * ./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip
 * A new '.bin' file will be created in the 'converted' directory
 * Burn the image to a 27c64 eprom and place in U3
 * Replace U1 and U2 with a suitable target game
