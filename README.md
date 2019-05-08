@@ -4,17 +4,14 @@ Tools for the Playchoice 10 arcade machine
 ## PC10
 v1.0.0
 
-Port .a22 NO$NES assembled '.BIN' files to work with specific host Playchoice carts.
-With this tool you can alter a custom instructions ROM to work with specific Playchoice carts.
-This allows the new ROM to work with the existing PROM on the host carts.
-No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
+A tool for converting lackluster titles such as 'Golf' and 'Tennis' to more exciting or classic games such as 'Balloon Fight' and 'Mario Bros.' 
 
-This tool is particularly useful for converting lackluster titles such as 'Golf' and 'Tennis' to more exciting or classic games such as 'Balloon Fight' and 'Mario Bros.' 
+Port .a22 NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
 Steps:
 * Create .a22 file (as described in KLOV thread or NO$NES site)
 * Use NO$NES to assemble a '.bin' ROM file
-* Copy the '.bin' file in the 'files' directory
+* Copy the '.bin' file to the 'files' directory
 * Source the official ROM file for the hosting cart (dump it yourself or be careful when downloading it)
   * Copy the ROM ZIP to the 'files' directory
 * Run ./PC10.out from the command line (tested on macOS)
