@@ -4,7 +4,7 @@ Tools for the Playchoice 10 arcade machine
 ## PC10
 v1.0.0
 
-A tool for converting lackluster titles such as 'Golf' and 'Tennis' to more exciting or classic games such as 'Balloon Fight' and 'Mario Bros.' 
+A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight' and 'Mario Bros.' 
 
 Port .a22 NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
