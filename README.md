@@ -52,4 +52,5 @@ Copyright 2010-2014 Rich Geldreich and Tenacious Software LLC
 https://github.com/richgel999/miniz
 
 NO$NES:
+NO$NES (c) Martin Korth
 https://problemkaputt.de/nes.htm
