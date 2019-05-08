@@ -59,6 +59,21 @@ PC10 will
 * Alter the last byte in the '.BIN' data to make the checksum balance
 * Write the '.BIN' data to a new 'converted' file
 
+## Compatibility list
+Notes in brackets are the points that need soldering on the cart:
+* Golf (SL2)
+* Tennis (SL2)
+* Balloon Fight (SL2)
+* Mario Bros (SL2)
+* Baseball (SL2)
+* Duck Hunt (SL3)
+* Excitebike (SL3)
+* Hogans Alley (SL3)
+* Wild Gunman (SL3)
+* Kung Fu (SL1,SL3)
+* Super Mario Bros. (SL1, SL3)
+* Volleyball (SL1, SL3)
+
 ## Links
 * KLOV thread: https://forums.arcade-museum.com/showthread.php?t=350798
 * NO$NES: https://problemkaputt.de/nes.htm
