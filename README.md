@@ -1,7 +1,7 @@
 # Playchoice10
 Tools for the Playchoice 10 arcade machine
 
-## PC10
+## PC10 v1.0.0
 Port .a22 NO$NES assembled '.BIN' files to work with specific host Playchoice carts.
 With this tool you can alter a custom instructions ROM to work with specific Playchoice carts.
 This allows the new ROM to work with the existing PROM on the host carts.
