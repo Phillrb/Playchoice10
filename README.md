@@ -30,6 +30,27 @@ The KLOV thread outlines a method to address the problem by means of eliminating
 
 This PC10 tool was created to enable conversion of some games to others without removing the existing prom.
 
+## Usage
+
+Command line arguments:
+```./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip```
+
+Pass '-h' on the command line:
+```
+PC10 v1.0.0
+@NES4Life - https://github.com/Phillrb/Playchoice10
+
+Usage: -b bin_file -c cart_rom_zip
+* Pass path to bin file as '-b' param
+* Pass path to zipped ROM file for hosting cart as '-c' param
+  * Pass "" as the '-c' param if using the security IC replacement PCB
+
+e.g. Making a 'Balloon Fight' conversion for a hosting 'Golf' cartridge:
+./PC10.out -b BALLOON_FIGHT.BIN -c pc_golf.zip
+
+A new .BIN file will be created called 'files/converted/BALLOON_FIGHT.BIN' 
+```
+
 ## Links
 * KLOV thread: https://forums.arcade-museum.com/showthread.php?t=350798
 * NO$NES: https://problemkaputt.de/nes.htm
