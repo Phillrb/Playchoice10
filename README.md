@@ -48,3 +48,6 @@ Miniz (used for unzip):
 Copyright 2013-2014 RAD Game Tools and Valve Software
 Copyright 2010-2014 Rich Geldreich and Tenacious Software LLC
 https://github.com/richgel999/miniz
+
+NO$NES:
+https://problemkaputt.de/nes.htm
