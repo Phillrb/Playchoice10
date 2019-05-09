@@ -3,7 +3,10 @@
 // license:BSD-3-Clause
 // copyright-holders:Nicola Salmoria
 
-// Minor alteration for 'PC10' by @NES4Life
+// Minor alterations for 'PC10' by @NES4Life
+// BSD 3-Clause License
+// Copyright (c) 2019, Phillip Riscombe-Burton
+// All rights reserved.
 
 #ifndef RP5H01_DEVICE_H
 #define RP5H01_DEVICE_H
