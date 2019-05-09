@@ -9,6 +9,9 @@
 // copyright-holders:Ernesto Corvi,Brad Oliver
 
 // Minor alterations for 'PC10' by @NES4Life
+// BSD 3-Clause License
+// Copyright (c) 2019, Phillip Riscombe-Burton
+// All rights reserved.
 
 #include "rp5h01_device.h"
 #include "../util/util.h"
