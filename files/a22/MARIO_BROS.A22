@@ -1,7 +1,12 @@
-;Example code for a PC10 INST ROM
+;Original example code for a PC10 INST ROM taken from
 ;Magic Floor PC10 version (c) martin korth
 ;example source code for a PC10 game with INST ROM
 ;to be assembled via Utility menu in no$nes debugger
+;
+;Changes made by Phillip Riscombe-Burton are under:
+;BSD 3-Clause License
+;Copyright (c) 2019, Phillip Riscombe-Burton
+;
 ;------------------
 .pc10_title " MARIO BROS. _______@/@@"  ;2-players (face symbols)
 ;--- other examples:
