@@ -4,7 +4,7 @@ Tools for the Playchoice 10 arcade machine
 ## PC10
 v1.0.0
 
-A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight' and 'Mario Bros.' without removing the existing security prom.
+A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight', 'Mario Bros.' and 'Duck Hunt' without removing the existing security prom.
 
 Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
@@ -26,7 +26,7 @@ Steps:
 * Place / remove solder at solder points SL1, SL2 & SL3 as necessary (see compatibility list)
 
 ## Background
-Supported Playchoice 10 games have 3 eproms and a serial prom. U1 and U2 are the game code eproms, U3 is the instruction eprom and the serial prom is a tiny security IC. The Playchoice 10 bios calculates a checksum between the data held in U3 and the prom. The checksum can be calculated for any combination or prom and instruction rom using the PC10 tool here.
+Typically Playchoice 10 games have 3 eproms and a serial prom. U1 and U2 are the game code eproms, U3 is the instruction eprom and the serial prom is a tiny security IC. The Playchoice 10 bios calculates a checksum between the data held in U3 and the prom. The checksum can be calculated for any combination or prom and instruction rom using the PC10 tool here.
 
 The KLOV thread (_see link below_) outlines a method to address the problem by means of eliminating the prom entirly with a 'Replacement Security IC PCB'. This PCB contains 2 buffers that simply pull up the data and counter lines on the prom socket when data is requested. The checksum was then calculated for this arrangement by the NO$NES assembler (_see link below_). The downside to this arrangement is that the replacement PCBs are fiddly to create but the positive is that there is no need to source any physical prom. The PC10 tool still supports the use of these replacement secuirty ICs by passing an empty string ("") as the '-c' param. 
 
