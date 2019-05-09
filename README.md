@@ -4,27 +4,31 @@ Tools for the Playchoice 10 arcade machine
 ## PC10
 v1.0.0
 
-A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight' and 'Mario Bros.' 
+A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight' and 'Mario Bros.' without removing the existing security prom.
 
-Port .a22 NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
+Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
 Steps:
-* Create .a22 file (as described in KLOV thread or NO$NES site)
-* Use NO$NES to assemble a '.bin' ROM file
+* Create '.a22' file (as described in KLOV thread or NO$NES site - see links below)
+  * _Example '.a22' files are already in 'files/a22'_
+* Use NO$NES to assemble a '.bin' Playchoice Instruction ROM
 * Copy the '.bin' file to the 'files' directory
+  * _Example assembled '.bin' file is 'files/BALLOON_FIGHT.BIN'_
 * Source the official ROM file for the hosting cart (dump it yourself or be careful when downloading it)
   * Copy the ROM ZIP to the 'files' directory
-* Run ./PC10.out from the command line (tested on macOS)
-  * ./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip
-* A new '.bin' file will be created in the 'converted' directory
-* Burn the image to a 27c64 eprom and place in U3
-* Replace U1 and U2 with a suitable target game
-* Place solder at solder points SL1, SL2 & SL3 as necessary (see compatibility list)
+  * _You will find no Playchoice 10 ROMs in this repository_
+* Run `./PC10.out` from the command line (_tested on macOS_)
+  * `./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip`
+* A new '.bin' file will be created in the 'files/converted' directory
+  * _Example converted '.bin' file is 'files/converted/BALLOON_FIGHT.BIN'_
+* Burn the converted '.bin' to a 27c64 eprom and place in U3 on the cart
+* Replace U1 and U2 with suitable ROMs for the new game
+* Place / remove solder at solder points SL1, SL2 & SL3 as necessary (see compatibility list)
 
 ## Background
-Supported Playchoice 10 games have 3 Eproms and a serial prom. U1 and U2 are the game code eproms, U3 is the instruction eprom, and the serial prom is a tiny security IC. The Playchoice 10 bios calculates a checksum between the data held in U3 and the prom. The checksum can be calculated for any combination or prom and instruction rom.
+Supported Playchoice 10 games have 3 eproms and a serial prom. U1 and U2 are the game code eproms, U3 is the instruction eprom and the serial prom is a tiny security IC. The Playchoice 10 bios calculates a checksum between the data held in U3 and the prom. The checksum can be calculated for any combination or prom and instruction rom using the PC10 tool here.
 
-The KLOV thread outlines a method to address the problem by means of eliminating the prom entirly with a 'Replacement Security IC PCB'. This PCB contains 2 buffers that simply pull up the data and counter lines on the prom socket when data is requested. The checksum was then calculated by the NO$NES assembler for this arrangement. The downside to this arrangement is that the replacement PCBs are fiddly to create but the positive is that there is no need to source any physical prom.
+The KLOV thread (_see link below_) outlines a method to address the problem by means of eliminating the prom entirly with a 'Replacement Security IC PCB'. This PCB contains 2 buffers that simply pull up the data and counter lines on the prom socket when data is requested. The checksum was then calculated for this arrangement by the NO$NES assembler (_see link below_). The downside to this arrangement is that the replacement PCBs are fiddly to create but the positive is that there is no need to source any physical prom. The PC10 tool still supports the use of these replacement secuirty ICs by passing an empty string ("") as the '-c' param. 
 
 This PC10 tool was created to enable conversion of some games to others without removing the existing prom.
 
@@ -44,15 +48,16 @@ Usage: -b bin_file -c cart_rom_zip
   * Pass "" as the '-c' param if using the security IC replacement PCB
 
 e.g. Making a 'Balloon Fight' conversion for a hosting 'Golf' cartridge:
-./PC10.out -b BALLOON_FIGHT.BIN -c pc_golf.zip
+./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip
 
-A new .BIN file will be created called 'files/converted/BALLOON_FIGHT.BIN' 
+A new .BIN file will be created at 'files/converted/BALLOON_FIGHT.BIN' 
 ```
-## Steps taken
-PC10 will
+## Steps taken by PC10
+PC10 will:
 * Copy '.BIN' file to memory
 * Extract 'security.prom' from zipped host ROM
-* Trim '.BIN' data to fit an eprom
+* Trim '.BIN' data to fit a 27c64 eprom
+* Inject a '@NES4LIFE' signature for vanity
 * Calculate the checksum for the eprom & host prom combination
 * Alter the last byte in the '.BIN' data to make the checksum balance
 * Write the '.BIN' data to a new 'converted' file
