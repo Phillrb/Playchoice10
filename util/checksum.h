@@ -1,3 +1,8 @@
+// BSD 3-Clause License
+
+// Copyright (c) 2019, Phillip Riscombe-Burton
+// All rights reserved.
+
 #ifndef CHECKSUM_H
 #define CHECKSUM_H
 
