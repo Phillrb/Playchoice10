@@ -1,3 +1,6 @@
+// BSD 3-Clause License
+// Copyright (c) 2019, Phillip Riscombe-Burton
+// All rights reserved.
 
 #include "util.h"
 #include "../zip/miniz.h"
