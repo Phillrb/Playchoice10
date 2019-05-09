@@ -1,4 +1,9 @@
 
+// BSD 3-Clause License
+
+// Copyright (c) 2019, Phillip Riscombe-Burton
+// All rights reserved.
+
 #include "rp5h01_device.h"
 #include "util.h"
 #include <iostream>
