@@ -93,15 +93,20 @@ unsigned char * getROM(const char* filepath, int &romsize) {
     else 
     {
         // Reading size of file
-        FILE * file = fopen(filepath, "r+");
+        FILE * file = fopen(filepath, "rb");
         if (file == NULL) return 0;
         fseek(file, 0, SEEK_END);
         long int size = ftell(file);
-        fclose(file);
+        rewind(file);
+
         // Reading data to array of unsigned chars
-        file = fopen(filepath, "r+");
-        unsigned char * ROM = (unsigned char *) malloc(size);
+        unsigned char * ROM = (unsigned char *) malloc(sizeof(unsigned char) * size);
         romsize = fread(ROM, sizeof(unsigned char), size, file);
+        if (romsize != size) {
+            cout << "Rom size read = " << romsize << endl;
+            cout << "Error reading file: " << filepath << endl;
+            exit(0);
+        }
         fclose(file);
         return ROM;
     }
