@@ -79,7 +79,7 @@ static void show_usage()
               << std::endl
               << "./PC10.out -b BALLOON_FIGHT.BIN -c pc_golf.zip"
               << std::endl << std::endl
-              << "A new .BIN file will be created called 'files/converted/BALLOON_FIGHT.BIN'"
+              << "A new .BIN file will be created called 'converted_BALLOON_FIGHT.BIN'"
               << std::endl << std::endl;
 }
 
