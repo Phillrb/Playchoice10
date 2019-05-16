@@ -1,0 +1,31 @@
+;BSD 3-Clause License
+;Copyright (c) 2019, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " DUCK HUNT ________=@   "  ;lightgun  (gun symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "          {R:DUCK HUNT}           "
+.pc10_instructions " Select game and press start! "
+.pc10_instructions "                              "
+.pc10_instructions "Game A :                      "
+.pc10_instructions " {M:Draw the gun from the holster}"
+.pc10_instructions " {M:Ducks fly up one at a time.}  "
+.pc10_instructions " {M:Aim and shoot them!  But you} "
+.pc10_instructions " {M:are limited 3 shots per duck.}"
+.pc10_instructions " {M:Two can play this game!  One} "
+.pc10_instructions " {M:is the hunter, and the other} "
+.pc10_instructions " {M:controls the ducks to escape.}"
+.pc10_instructions "                              "
+.pc10_instructions "Game B :                      "
+.pc10_instructions " {M:Ducks fly up two at a time.}  "
+.pc10_instructions " {M:3 shots per two ducks!}       "
+.pc10_instructions " {M:Only one can play this game.} "
+.pc10_instructions "                              "
+.pc10_instructions "Game C :                      "
+.pc10_instructions " {M:3 shots per two clay pigeons!}"
+.pc10_instructions "                              "
+.pc10_instructions " Please return the gun to the "
+.pc10_instructions " holster before you leave !   "
+;---
+.end

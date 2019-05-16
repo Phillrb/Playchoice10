@@ -1,80 +1,9 @@
-;Original example code for a PC10 INST ROM taken from
-;Magic Floor PC10 version (c) martin korth
-;example source code for a PC10 game with INST ROM
-;to be assembled via Utility menu in no$nes debugger
-;
-;Changes made by Phillip Riscombe-Burton are under:
 ;BSD 3-Clause License
 ;Copyright (c) 2019, Phillip Riscombe-Burton
 ;
 ;------------------
 .pc10_title " EXCITEBIKE ________    "  ;2-players (face symbols)
-;--- other examples:
-;.pc10_title " NORMAL GAME _______    "  ;1-player  (no symbols)
-;.pc10_title " TWO PLAYER GAME ___@/@@"  ;2-players (face symbols)
-;.pc10_title " LIGHTGUN GAME ____=@   "  ;lightgun  (gun symbol)
-;---
-;above assigns the title (max 24 chars, but with some leading/ending
-;restrictions:
-;  1st char must be a space (to match-up with other games in the menu)
-;  2nd..Nth char can be UPPERCASE title, numbers, space, or .'!-"",:+
-;  Nth char should be followed by space + dotted line symbols (aka underscore)
-;  last 4-5 chars should contain player/gun symbols (or spaces for 1-player)
-;---
-;alongsides, the no$sns/a22i tool is automatically assigning a 7bit
-;GameID (range 60h..DFh) based on the title checksum; that GameID won't
-;conflict with known existing original games, and also somewhat minimizes the
-;risk that homebrew builts would conflict with each other. A unique GameID is
-;less important as than on the NSS; menu selection works even with duplicated
-;values, but the bookkeeping feature will get confused by dupes.
-;------------------
-;below defines the NORMAL demo duration, and EXTENDED demo duration
-;in Z80-video-circuit frame units (framerate = approx 60Hz)
-;the NORMAL duration is always taken, the EXTENDED duration is additionally
-;taken if the user has "showed interest" in the game (that is, if the user
-;has manually selected to read the games instructions).
-;---
-;on the DUAL-MONITOR veersion, the instructions are shown ALONGSIDES with
-;the demo (so here, the demo duration is also the INSTRUCTION duration, and
-;the EXTENDED value should be thus long enough to read all instruction pages).
-;---
 .pc10_demo_duration 60*15, 60*100
-;---
-;note: the BIOS will add 1-2 seconds leading/trailing delays to above duration,
-;so the actual duration may appear a bit longer as defined above.
-;------------------
-;below defines the instructions (shown via Z80 video circuit)
-;---
-;instructions must have 30 characters per line
-;instructions must have 22 lines per page
-;instructions should have uppercase title in red color in first line
-;instructions can have ca. 11 pages (more if they contain much blank space)
-;multi-instructions should show white page number "N/N" in upper right
-;multi-instructions should show "Press ENTER for next page" (or such) at bottom
-;---
-;color attributes can be assigned as "{A:Text}", whereas "A" can be:
-;  R=Red, G=Green, D=DarkGreen, W=White, O=Orange, M=Mint, Y=Yellow
-;  initial default color is white
-;examples:
-;  .pc10_instructions "White Text"
-;  .pc10_instructions "{R:Red Text}"
-;  .pc10_instructions "White Text{R:Red Text{G:Green Text}Red Text}White Text"
-;---
-;the PC10 hardware has some restrictions on coloring, for example, Red cannot
-;be used for lowercase letters (a22i automatically makes red text uppercase).
-;see below character set / palette tables for possible color combinations.
-;---
-;PC10 Character Sets - Available Characters per Color
-;  Charset0:  0123456789.'!-",:+?()/=ABCDEFGHIJKLMNOPQRSTUVWXYZabc..xyz
-;  Charset1:  0123456789 '!- ,   ()  ABCDEFGHIJKLMNOPQRSTUVWXYZabc..xyz
-;  Charset2:  0123456789.'!-",:+     ABCDEFGHIJKLMNOPQRSTUVWXYZ
-;  Charset3:              !          ABC E  HI  LMNOP RSTU   Y
-;Possible Charset vs Palette combinations for Instruction Texts are:
-;  Palette:   10h       11h       1Bh       1Ch       1Dh       1Eh
-;  Charset0:  White     Mint      D.Blue    Orange2   D.Green   White
-;  Charset1:  Orange    L.Green   Blue      Magenta   P.Green   Orange3
-;  Charset2:  Red       M.Green   White     Red       Pink      Red
-;  Charset3:  Yellow    Yellow    -         -         -         -
 ;---
 .pc10_instructions "          {R:EXCITEBIKE}          "
 .pc10_instructions " Select game and press start! "
@@ -98,19 +27,5 @@
 .pc10_instructions " {M:on both wheels!}              "
 .pc10_instructions " {M:Do a wheely to get over small}"
 .pc10_instructions " {M:obstacles.}                   "
-;------------------
-;below includes the actual game source code.
-;if you want to use a binary (NES ROM-image) instead of source code,
-;replace the ".include source.a22" line by ".import binary.nes"
 ;---
-;pc10_version equ 1
-;.include MAGICNES.A22
 .end
-;---
-;the "pc10_version equ 1" tells the source code to apply some PC10 specific
-;customizations to the NES code:
-;  omit the in-game instructions (instead, instructions are shown via Z80)
-;  fix the color palette (PC10 RGB palette seems to have wrong intensity ramp)
-;  automatically switch to game or demo mode (depending on coin inserts)
-;  allow game to start via START/SELECT only (other buttons cannot be disabled)
-;------------------
