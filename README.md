@@ -38,18 +38,33 @@ This PC10 tool was created to enable conversion of some games to others without 
 
 ## Building
 
-To make the build process easier you can now use [CMake](https://cmake.org/install/):
+To make the build process easier you can now use [CMake](https://cmake.org/install/)
 
-```
+First create and move to a build directory:
+
+```bash
 mkdir build
 cd build
+```
+
+Then for Linux / macOS Terminal:
+
+```bash
 cmake ..
 make
+```
+
+or for Windows Command Prompt (using [MinGW](https://mingw-w64.org)):
+
+```bash
+cmake .. -G "MinGW Makefiles"
+mingw32-make
 ```
 
 ## Usage
 
 To create a new 'Balloon Fight' instruction ROM that would only work in a 'Golf' cartridge:
+
 ```./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip```
 
 For help with arguments pass '-h' on the command line:
