@@ -1,0 +1,31 @@
+;BSD 3-Clause License
+;Copyright (c) 2019, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " WILD GUNMAN ______=@   "  ;lightgun  (gun symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "         {R:WILD GUNMAN}          "
+.pc10_instructions "                              "
+.pc10_instructions " Select game and press start! "
+.pc10_instructions "                              "
+.pc10_instructions "Game A/B : {O:Quick-draw game}    "
+.pc10_instructions " {M:Draw the gun from the holster}"
+.pc10_instructions "   {M:Wait for the bandits}       "
+.pc10_instructions "   {M:eyes to flash or 'fire!!'}  "
+.pc10_instructions "   {M:then shoot the bandit.      "
+.pc10_instructions "                              "
+.pc10_instructions "   {R:DO NOT SHOOT TOO SOON!}     "
+.pc10_instructions "                              "
+.pc10_instructions "Game C : {O:Gun fight game}       "
+.pc10_instructions " {M:Draw the gun from the holster}"
+.pc10_instructions " {M:Get ready to fight a}         "
+.pc10_instructions " {M:gang of ten bandits.}         "
+.pc10_instructions " You are limited to 15        "
+.pc10_instructions " shots.                       "
+.pc10_instructions "                              "
+.pc10_instructions " Please return the gun to the "
+.pc10_instructions " holster before you leave !   "
+.pc10_instructions "                              "
+;---
+.end
