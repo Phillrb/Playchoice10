@@ -4,13 +4,15 @@ Tools for the Playchoice 10 arcade machine
 
 ## PC10
 
-v1.0.0
-
 A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight', 'Mario Bros.' and 'Duck Hunt' without removing the existing security prom.
 
 Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
-Steps:
+## Download
+Download the latest release for Windows, macOS or Linux:
+<https://github.com/Phillrb/Playchoice10/releases>
+
+## Usage
 
 * Create '.a22' file (as described in KLOV thread or NO$NES site - see links below)
   * _Example '.a22' files are already in 'files/a22'_
@@ -37,6 +39,9 @@ The KLOV thread (_see link below_) outlines a method to address the problem by m
 This PC10 tool was created to enable conversion of some games to others without removing the existing prom.
 
 ## Building
+
+_This section is for those that want to build the tool themselves (rather than download the binary / executable from 
+<https://github.com/Phillrb/Playchoice10/releases>)_
 
 To make the build process easier you can now use [CMake](https://cmake.org/install/)
 
