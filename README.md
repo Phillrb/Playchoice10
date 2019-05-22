@@ -4,13 +4,16 @@ Tools for the Playchoice 10 arcade machine
 
 ## PC10
 
-v1.0.0
-
 A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight', 'Mario Bros.' and 'Duck Hunt' without removing the existing security prom.
 
-Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host carts. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
+Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host cart. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
-Steps:
+## Download
+
+Download the latest release for Windows, macOS or Linux:
+<https://github.com/Phillrb/Playchoice10/releases>
+
+## Usage
 
 * Create '.a22' file (as described in KLOV thread or NO$NES site - see links below)
   * _Example '.a22' files are already in 'files/a22'_
@@ -37,6 +40,9 @@ The KLOV thread (_see link below_) outlines a method to address the problem by m
 This PC10 tool was created to enable conversion of some games to others without removing the existing prom.
 
 ## Building
+
+_This section is for those that want to build the tool themselves (rather than download the binary / executable from 
+<https://github.com/Phillrb/Playchoice10/releases>)_
 
 To make the build process easier you can now use [CMake](https://cmake.org/install/)
 
@@ -98,7 +104,11 @@ PC10 will:
 
 ## Compatibility list
 
-Notes in brackets are the points that need soldering on the cart:
+_Notes in brackets are the points that need soldering on the cart_
+
+### Original Playchoice games
+
+_These can be the host cart or the conversion game:_
 
 * Golf (SL2)
 * Tennis (SL2)
@@ -112,6 +122,7 @@ Notes in brackets are the points that need soldering on the cart:
 * Kung Fu (SL1,SL3)
 * Super Mario Bros. (SL1, SL3)
 * Volleyball (SL1, SL3)
+* 1942 (SL1, SL2)
 
 ## Links
 
