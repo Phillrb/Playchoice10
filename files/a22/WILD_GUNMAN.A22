@@ -13,7 +13,7 @@
 .pc10_instructions " {M:Draw the gun from the holster}"
 .pc10_instructions "   {M:Wait for the bandits}       "
 .pc10_instructions "   {M:eyes to flash or 'fire!!'}  "
-.pc10_instructions "   {M:then shoot the bandit.      "
+.pc10_instructions "   {M:then shoot the bandit.}     "
 .pc10_instructions "                              "
 .pc10_instructions "   {R:DO NOT SHOOT TOO SOON!}     "
 .pc10_instructions "                              "
