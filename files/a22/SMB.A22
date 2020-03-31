@@ -1,0 +1,53 @@
+;BSD 3-Clause License
+;Copyright (c) 2020, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " SUPER MARIO BROS.__    "  ;(no symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "     {R:SUPER MARIO BROS.}     1/2"
+.pc10_instructions " {G:Once upon a time,the turtles} "
+.pc10_instructions "{G:invaded the mushroom Kingdom!} "
+.pc10_instructions " {G:Mario's quest to free the}    "
+.pc10_instructions "{G:Princess has only just begun!!}"
+.pc10_instructions " --- How To Control Mario --- "
+.pc10_instructions "Make Mario walk Left/Right    "
+.pc10_instructions "  = Control Left/Right        "
+.pc10_instructions "Make Mario run = Control L/R  "
+.pc10_instructions "  while pressing {Y:B} button     "
+.pc10_instructions "Duck = Control down           "
+.pc10_instructions "  {M:Control up is for climbing??}"
+.pc10_instructions "Jump = Press {Y:A}                "
+.pc10_instructions "  {M:The longer you press {Y:A}}, the "
+.pc10_instructions "  {M:higher Mario jumps. Press {Y:A}} "
+.pc10_instructions "  {M:while Mario is running to}   "
+.pc10_instructions "  {M:jump higher and further.}    "
+.pc10_instructions "To swim in water = Tap {Y:A}      "
+.pc10_instructions "  {M:After picking a Fire Flower} "
+.pc10_instructions "  {M:Press {Y:B} to throw a Fireball!}"
+.pc10_instructions "                              "
+.pc10_instructions " Press ENTER to see next page!"
+.pc10_instructions "     {R:SUPER MARIO BROS.}     2/2"
+.pc10_instructions "How To Get Extra Mario        "
+.pc10_instructions "{M:1. Find Extra Life Mushroom}   "
+.pc10_instructions "{M:2 Pick up 100 coins!}          "
+.pc10_instructions "{M:3 There are other ways???}     "
+.pc10_instructions "                              "
+.pc10_instructions "How To Boost Mario's Power    "
+.pc10_instructions "{M:1. Pick up a Magic Mushroom,}  "
+.pc10_instructions "   {M:Mario changes to be Super.} "
+.pc10_instructions "{M:2. Pick up a Fire Flower,Super}"
+.pc10_instructions "   {M:Mario can throw Fireballs.} "
+.pc10_instructions "{M:3. 'Starman' makes Mario}      "
+.pc10_instructions "   {M:invincible for a short time}"
+.pc10_instructions "                              "
+.pc10_instructions " Mario + Magic Mushroom       "
+.pc10_instructions "                = Super Mario "
+.pc10_instructions " Super Mario + Fire Flower    "
+.pc10_instructions "                = Fiery Mario "
+.pc10_instructions "                              "
+.pc10_instructions " Press {Y:B} and throw a Fireball!"
+.pc10_instructions "                              "
+.pc10_instructions " Press ENTER  Return to page 1"
+;---
+.end
