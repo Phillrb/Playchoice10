@@ -18,7 +18,7 @@
 .pc10_instructions "Duck = Control down           "
 .pc10_instructions "  {M:Control up is for climbing??}"
 .pc10_instructions "Jump = Press {Y:A}                "
-.pc10_instructions "  {M:The longer you press {Y:A}}, the "
+.pc10_instructions "  {M:The longer you press {Y:A}, the} "
 .pc10_instructions "  {M:higher Mario jumps. Press {Y:A}} "
 .pc10_instructions "  {M:while Mario is running to}   "
 .pc10_instructions "  {M:jump higher and further.}    "
