@@ -2,7 +2,7 @@
 ;Copyright (c) 2020, Phillip Riscombe-Burton
 ;
 ;------------------
-.pc10_title " SUPER MARIO BROS.__    "  ;(no symbol)
+.pc10_title " SUPER MARIO BROS. _    "  ;(no symbol)
 .pc10_demo_duration 60*15, 60*100
 ;---
 .pc10_instructions "     {R:SUPER MARIO BROS.}     1/2"
