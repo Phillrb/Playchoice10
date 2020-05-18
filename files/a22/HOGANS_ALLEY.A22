@@ -2,21 +2,22 @@
 ;Copyright (c) 2020, Phillip Riscombe-Burton
 ;
 ;------------------
-.pc10_title " HOGAN'S ALLEY _____=@   "  ;lightgun  (gun symbol)
+.pc10_title " HOGAN'S ALLEY ____=@   "  ;lightgun  (gun symbol)
 .pc10_demo_duration 60*15, 60*100
 ;---
-.pc10_instructions "        {R:HOGAN'S ALLEY}     "
+.pc10_instructions "        {R:HOGAN'S ALLEY}         "
+.pc10_instructions "                              "
 .pc10_instructions " Select game and press start! "
 .pc10_instructions "                              "
-.pc10_instructions "Game A/B :                    "
-.pc10_instructions "                              "
+.pc10_instructions "Game A/B : {O:Police Academy      "
+.pc10_instructions "           {O:Training Course}    "
 .pc10_instructions "  {M:Draw the gun from the}       "
 .pc10_instructions "  {M:holster.  Shoot gangsters}   "
 .pc10_instructions "  {M:only.  Do not shoot police}  "
 .pc10_instructions "  {M:or good citizens.}           "
 .pc10_instructions "  10 misses are allowed!!     "
 .pc10_instructions "                              "
-.pc10_instructions "Game C :                      "
+.pc10_instructions "Game C : {O:Trick shot}           "
 .pc10_instructions "  {M:Shoot the cans, keeping them}"
 .pc10_instructions "  {M:in the air and guiding them} "
 .pc10_instructions "  {M:onto the platforms!!}        "
@@ -25,5 +26,6 @@
 .pc10_instructions "                              "
 .pc10_instructions " Please return the gun to the "
 .pc10_instructions " holster before you leave !   "
+.pc10_instructions "                              "
 ;---
 .end
