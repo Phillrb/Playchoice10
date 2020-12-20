@@ -79,7 +79,8 @@ static void show_usage()
 #ifdef _WIN32
               << "./PC10.exe -b BALLOON_FIGHT.BIN -c pc_golf.zip"
 #else
-              << "./PC10.out -b BALLOON_FIGHT.BIN -c pc_golf.zip"
+              << "Linux: ./PC10.out -b BALLOON_FIGHT.BIN -c pc_golf.zip"
+              << "MacOS: ./PC10 -b BALLOON_FIGHT.BIN -c pc_golf.zip"
 #endif
               << std::endl << std::endl
               << "A new .BIN file will be created called 'converted_BALLOON_FIGHT.BIN'"
