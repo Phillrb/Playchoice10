@@ -5,6 +5,7 @@ Tools for the Playchoice 10 arcade machine
 ## PC10
 
 A tool for converting lackluster Playchoice 10 titles such as 'Golf' and 'Tennis' to more exciting games such as 'Balloon Fight', 'Mario Bros.' and 'Duck Hunt' without removing the existing security prom.
+Also useful for porting NES games to the Playchoice 10.
 
 Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice carts. With this tool you can alter a custom instructions ROM to work with specific Playchoice carts. This allows the new ROM to work with the existing PROM on the host cart. No 'Replacement Security IC PCB' is required and you do not need to burn a new Ricoh PROM.
 
@@ -12,6 +13,11 @@ Port '.a22' NO$NES assembled '.BIN' files to work with specific host Playchoice 
 
 Download the latest release for Windows, macOS or Linux:
 <https://github.com/Phillrb/Playchoice10/releases>
+
+## Code
+
+This repo using git submodules to pull in dependencies so it's best to clone recursively:
+`git clone --recursive https://github.com/Phillrb/Playchoice10.git`
 
 ## Usage
 
@@ -23,7 +29,7 @@ Download the latest release for Windows, macOS or Linux:
 * Source the official ROM file for the hosting cart (dump it yourself or be careful when downloading it)
   * Copy the ROM ZIP to the 'files' directory
   * _You will find no Playchoice 10 ROMs in this repository_
-* Run `./PC10.out` from the command line (_tested on macOS_)
+* Run `./PC10.out` or `./PC10.exe` from the command line
   * `./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip`
 * A new '.bin' file will be created in the 'files/converted' directory
   * _Example converted '.bin' file is 'files/converted/BALLOON_FIGHT.BIN'_
@@ -44,7 +50,7 @@ This PC10 tool was created to enable conversion of some games to others without 
 _This section is for those that want to build the tool themselves (rather than download the binary / executable from 
 <https://github.com/Phillrb/Playchoice10/releases>)_
 
-To make the build process easier you can now use [CMake](https://cmake.org/install/)
+To make the build process easier on Linux & macOS you can now use [CMake](https://cmake.org/install/)
 
 First create and move to a build directory:
 
@@ -60,12 +66,7 @@ cmake ..
 make
 ```
 
-or for Windows Command Prompt (using [MinGW](https://mingw-w64.org)):
-
-```bash
-cmake .. -G "MinGW Makefiles"
-mingw32-make
-```
+or for Windows Command Prompt open the Visual Studio solution.
 
 ## Usage
 
@@ -76,7 +77,7 @@ To create a new 'Balloon Fight' instruction ROM that would only work in a 'Golf'
 For help with arguments pass '-h' on the command line:
 
 ```
-PC10 v1.0.0
+PC10 v1.0.1
 @NES4Life - https://github.com/Phillrb/Playchoice10
 
 Usage: -b bin_file -c cart_rom_zip
@@ -85,7 +86,10 @@ Usage: -b bin_file -c cart_rom_zip
   * Pass "" as the '-c' param if using the security IC replacement PCB
 
 e.g. Making a 'Balloon Fight' conversion for a hosting 'Golf' cartridge:
+Mac / Linux:
 ./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip
+Windows:
+./PC10.exe -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip
 
 A new .BIN file will be created at 'converted_BALLOON_FIGHT.BIN' 
 ```
@@ -131,13 +135,13 @@ _These can be the host cart or the conversion game:_
 
 ## 3rd Party Software
 
-Mame implementation of RP5H01 - Ricoh prom:
+MAME implementation of RP5H01 - Ricoh prom:
 // license:BSD-3-Clause
 // copyright-holders:Nicola Salmoria
 <https://github.com/mamedev/mame/blob/master/src/devices/machine/rp5h01.h>
 <https://github.com/mamedev/mame/blob/master/src/devices/machine/rp5h01.cpp>
 
-Mame implementation of Playchoice 10:
+MAME implementation of Playchoice 10:
 // license:BSD-3-Clause
 // copyright-holders:Ernesto Corvi,Brad Oliver
 <https://github.com/mamedev/mame/blob/master/src/mame/machine/playch10.cpp>
@@ -146,6 +150,10 @@ Miniz (used for unzip):
 Copyright 2013-2014 RAD Game Tools and Valve Software
 Copyright 2010-2014 Rich Geldreich and Tenacious Software LLC
 <https://github.com/richgel999/miniz>
+
+xgetopt (for Windows compatibility):
+Copyright (c) 2016 hklo.tw@gmail.com
+<https://github.com/matthklo/xgetopt>
 
 NO$NES:
 NO$NES (c) Martin Korth

@@ -3,15 +3,14 @@
 // Copyright (c) 2019, Phillip Riscombe-Burton
 // All rights reserved.
 
-#include "util/util.h"
-#include "util/checksum.h"
-
 #include <iostream>
-#include <unistd.h>
+#include "../util/util.h"
+#include "../util/checksum.h"
+#include "../util/xgetopt/xgetopt.h"
 
 using namespace std;
 
-#define PC10_VERSION "1.0.0"
+#define PC10_VERSION "1.0.1"
 
 // Main flow of program
 
@@ -73,11 +72,15 @@ static void show_usage()
               << "* Pass path to bin file as '-b' param"
               << std::endl
               << "* Pass path to zipped ROM file for hosting cart as '-c' param" << std::endl
-              << "  * Pass \"\" as the '-c' param if using the security IC replacement PCB"
+              << "   * Pass \"\" as the '-c' param if using the security IC replacement PCB"
               << std::endl << std::endl
               << "e.g. Making a 'Balloon Fight' conversion for a hosting 'Golf' cartridge:"
               << std::endl
+#ifdef _WIN32
+              << "./PC10.exe -b BALLOON_FIGHT.BIN -c pc_golf.zip"
+#else
               << "./PC10.out -b BALLOON_FIGHT.BIN -c pc_golf.zip"
+#endif
               << std::endl << std::endl
               << "A new .BIN file will be created called 'converted_BALLOON_FIGHT.BIN'"
               << std::endl << std::endl;
@@ -93,22 +96,22 @@ int main(int argc, char* argv[])
     bool skip_signature = false;
     int c;
 
-    opterr = 0;
+    xopterr = 0;
 
     if (argc < 3) {
         show_usage();
         return 1;
     }
 
-    while ((c = getopt (argc, argv, "b:c:hsv")) != -1)
+    while ((c = xgetopt (argc, argv, "b:c:hsv")) != -1)
         
         switch (c)
         {
             case 'b':
-                bvalue = optarg;
+                bvalue = xoptarg;
                 break;
             case 'c':
-                cvalue = optarg;
+                cvalue = xoptarg;
                 break;
             case 'h':
                 show_usage();
@@ -121,20 +124,20 @@ int main(int argc, char* argv[])
                 return 0;
                 break;
             case '?':
-                if (optopt == 'b' || optopt == 'c')
-                fprintf (stderr, "Option -%c requires an argument.\n", optopt);
-                else if (isprint (optopt))
-                fprintf (stderr, "Unknown option `-%c'.\n", optopt);
+                if (xoptopt == 'b' || xoptopt == 'c')
+                fprintf (stderr, "Option -%c requires an argument.\n", xoptopt);
+                else if (isprint (xoptopt))
+                fprintf (stderr, "Unknown option `-%c'.\n", xoptopt);
                 else
                 fprintf (stderr,
                         "Unknown option character `\\x%x'.\n",
-                        optopt);
+                        xoptopt);
                 return 1;
             default:
                 abort ();
         }
 
-    for (index = optind; index < argc; index++)
+    for (index = xoptind; index < argc; index++)
         printf ("Non-option argument %s\n", argv[index]);
 
     // Go with the names / params supplied

@@ -1,0 +1,3 @@
+[submodule "util/xgetopt"]
+	path = util/xgetopt
+	url = https://github.com/matthklo/xgetopt.git

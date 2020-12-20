@@ -93,7 +93,8 @@ unsigned char * getROM(const char* filepath, int &romsize) {
     else 
     {
         // Reading size of file
-        FILE * file = fopen(filepath, "rb");
+        FILE* file = NULL;
+        fopen_s(&file, filepath, "rb");
         if (file == NULL) return 0;
         fseek(file, 0, SEEK_END);
         long int size = ftell(file);
