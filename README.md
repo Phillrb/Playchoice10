@@ -29,7 +29,7 @@ This repo using git submodules to pull in dependencies so it's best to clone rec
 * Source the official ROM file for the hosting cart (dump it yourself or be careful when downloading it)
   * Copy the ROM ZIP to the 'files' directory
   * _You will find no Playchoice 10 ROMs in this repository_
-* Run `./PC10.out` or `./PC10.exe` from the command line
+* Run `./PC10` (macOS),  `./PC10.out` (linux) or `./PC10.exe` (windows) from the command line
   * `./PC10.out -b files/BALLOON_FIGHT.BIN -c files/pc_golf.zip`
 * A new '.bin' file will be created in the 'files/converted' directory
   * _Example converted '.bin' file is 'files/converted/BALLOON_FIGHT.BIN'_

@@ -94,7 +94,11 @@ unsigned char * getROM(const char* filepath, int &romsize) {
     {
         // Reading size of file
         FILE* file = NULL;
+#ifdef _WIN32
         fopen_s(&file, filepath, "rb");
+#else
+        file = fopen(filepath, "rb");
+#endif
         if (file == NULL) return 0;
         fseek(file, 0, SEEK_END);
         long int size = ftell(file);
