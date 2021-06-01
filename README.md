@@ -128,6 +128,12 @@ _These can be the host cart or the conversion game:_
 * Volleyball (SL1, SL3)
 * 1942 (SL1, SL2)
 
+### Converted NES games
+
+_These are games I have personally converted and tested:_
+
+* Tennis -> Ice Climber (SL2) - U1 27128, U2 2764
+
 ## Links
 
 * KLOV thread: <https://forums.arcade-museum.com/showthread.php?t=350798>
