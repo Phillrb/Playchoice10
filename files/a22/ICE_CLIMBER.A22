@@ -5,7 +5,7 @@
 .pc10_title " ICE CLIMBER _______@/@@"  ;2-players (face symbols)
 .pc10_demo_duration 60*15, 60*100
 ;---
-.pc10_instructions "          {R:ICE CLIMBER}      1/2"
+.pc10_instructions "         {R:ICE CLIMBER}       1/2"
 .pc10_instructions " {G:It's only you and an ice}     "
 .pc10_instructions "{G:hammer as you make your way to}"
 .pc10_instructions "  {G:the top of the mountain!}    "
