@@ -1,0 +1,53 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " ICE CLIMBER _______@/@@"  ;2-players (face symbols)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "          {R:ICE CLIMBER}      1/2"
+.pc10_instructions " {G:It's only you and an ice}     "
+.pc10_instructions "{G:hammer as you make your way to}"
+.pc10_instructions "  {G:the top of the mountain!}    "
+.pc10_instructions "                              "
+.pc10_instructions "  {M:If you can break through} {O:8}  "
+.pc10_instructions " {M:levels of treacherous arctic} "
+.pc10_instructions "  {M:ice, you'll reach the top.}  "
+.pc10_instructions "                              "
+.pc10_instructions "          {O:Watch out!}          "
+.pc10_instructions "   Nitpicker, Condors, Topi   "
+.pc10_instructions "       and Polar Bears        "
+.pc10_instructions "   don't want you up there.   "
+.pc10_instructions " They've got a bag of tricks  "
+.pc10_instructions "    that will block your      "
+.pc10_instructions "      rise to the top.        "
+.pc10_instructions "                              "
+.pc10_instructions " {O:32} {M:challenging peaks to scale}"
+.pc10_instructions "   {M:alone or with a friend.}    "
+.pc10_instructions "                              "
+.pc10_instructions "                              "
+.pc10_instructions " Press ENTER to see next page!"
+.pc10_instructions "          {R:ICE CLIMBER}      2/2"
+.pc10_instructions "                              "
+.pc10_instructions "--- Control Popo and Nana --- "
+.pc10_instructions "Walk Left/Right               "
+.pc10_instructions "  = Control Left/Right        "
+.pc10_instructions "Jump to break a hole above    "
+.pc10_instructions "  = Press {Y:A}                   "
+.pc10_instructions "Strike with hammer            "
+.pc10_instructions "  = Press {Y:B}                   "
+.pc10_instructions "Choose a mountain (game menu) "
+.pc10_instructions "  = Control Up/Down           "
+.pc10_instructions "           {O:Enemies!}           "
+.pc10_instructions "{G:Topi}                          "
+.pc10_instructions "  Bring ice to fill in holes. "
+.pc10_instructions "{G:Condor}                        "
+.pc10_instructions "  Jump up and grab onto the   "
+.pc10_instructions "  Condor for extra points.    "
+.pc10_instructions "{G:Nitpicker}                     "
+.pc10_instructions "  Always flying around!       "
+.pc10_instructions "{G:Polar Bear}                    "
+.pc10_instructions "  Pushes the floors down.     "
+.pc10_instructions " Press ENTER  Return to page 1"
+;---
+.end
