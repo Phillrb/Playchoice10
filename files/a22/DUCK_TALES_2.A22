@@ -1,0 +1,53 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " DUCK TALES 2 ______    "  ;(no symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "         {R:DUCK TALES 2}      1/2"
+.pc10_instructions "      {G:Bless me bagpipes,}      "
+.pc10_instructions "      {G:he's at it again!}       "
+.pc10_instructions "                              "
+.pc10_instructions "   {M:Scrooge McDuck is hot on}   "
+.pc10_instructions "       {M:the trail of the}       "
+.pc10_instructions "   {M:richest adventure ever.}    "
+.pc10_instructions "                              "
+.pc10_instructions "     Pieces to the map of     "
+.pc10_instructions " the Lost Treasure of McDuck  "
+.pc10_instructions "have been scattered across the"
+.pc10_instructions " globe. Help Scrooge find them"
+.pc10_instructions " before the greedy Flintheart "
+.pc10_instructions "     Glomgold grabs them!     "
+.pc10_instructions "                              "
+.pc10_instructions "      {M:Become the richest}      "
+.pc10_instructions "      {M:duck in the world!}      "
+.pc10_instructions "                              "
+.pc10_instructions "     {O:Let's get crackin'!}      "
+.pc10_instructions "                              "
+.pc10_instructions "                              "
+.pc10_instructions " Press ENTER to see next page!"
+.pc10_instructions "         {R:DUCK TALES 2}      2/2"
+.pc10_instructions "                              "
+.pc10_instructions "  ---  Control Scrooge  ---   "
+.pc10_instructions "Move Left/Right               "
+.pc10_instructions "  = Control Left/Right        "
+.pc10_instructions "Jump Up                       "
+.pc10_instructions "  = Press {Y:A}                   "
+.pc10_instructions "Pogo Jump                     "
+.pc10_instructions "  = Press {Y:A} then hold {Y:B}       "
+.pc10_instructions "Grab Rope                     "
+.pc10_instructions "  = Jump toward and           "
+.pc10_instructions "    then Control Up           "
+.pc10_instructions "Golf Swing / Pull Item        "
+.pc10_instructions "  =  Control Toward until tail"
+.pc10_instructions "     wiggles, then press {Y:B}.   "
+.pc10_instructions "     Control Away for pull.   "
+.pc10_instructions "Pause / See Items and Adaptors"
+.pc10_instructions "  = Press {Y:Start}               "
+.pc10_instructions "                              "
+.pc10_instructions "                              "
+.pc10_instructions "                              "
+.pc10_instructions " Press ENTER  Return to page 1"
+;---
+.end
