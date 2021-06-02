@@ -2,7 +2,7 @@
 ;Copyright (c) 2019, Phillip Riscombe-Burton
 ;
 ;------------------
-.pc10_title " EXCITEBIKE ________    "  ;2-players (face symbols)
+.pc10_title " EXCITEBIKE ________    "  ;(no symbol)
 .pc10_demo_duration 60*15, 60*100
 ;---
 .pc10_instructions "          {R:EXCITEBIKE}          "
