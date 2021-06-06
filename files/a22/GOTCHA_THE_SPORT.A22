@@ -1,0 +1,31 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " GOTCHA! THE SPORT!=@   "  ;lightgun  (gun symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "      {R:GOTCHA! THE SPORT!}      "
+.pc10_instructions "                              "
+.pc10_instructions " It's just you now...         "
+.pc10_instructions " you're alone...              "
+.pc10_instructions " no one to turn to for help.  "
+.pc10_instructions "                              "
+.pc10_instructions " {M:Draw the gun from the holster}"
+.pc10_instructions "   {M:You've got a pretty good}   "
+.pc10_instructions " {M:supply of paint pellets but}  "  
+.pc10_instructions "       {R:DON'T WASTE ANY}        "
+.pc10_instructions " {M:'cause you'll need them all.} "
+.pc10_instructions "                              "
+.pc10_instructions "Register a hit on an enemy and"
+.pc10_instructions " mark him with a paint splot. "
+.pc10_instructions " Get 'em before they get you! "
+.pc10_instructions "                              "
+.pc10_instructions "  {M:The ultimate challenge...}   "
+.pc10_instructions "  {M:dare to take it...}          "
+.pc10_instructions "  {O:try to survive}              "
+.pc10_instructions "                              "
+.pc10_instructions " Please return the gun to the "
+.pc10_instructions " holster before you leave !   "
+;---
+.end
