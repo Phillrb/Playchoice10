@@ -1,0 +1,53 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " CASTLEVANIA _______    "  ;(no symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "         {R:CASTLEVANIA}      1/2 "
+.pc10_instructions "                              "
+.pc10_instructions " Duel to the death  Whip your "
+.pc10_instructions "    way through the castle    "
+.pc10_instructions "  Reach the tower and destroy "
+.pc10_instructions "       the evil Count         "
+.pc10_instructions "                              "
+.pc10_instructions "{M:Press START to Begin the game} "
+.pc10_instructions "     {M:Use {Y:A} button {G:to jump}}     "
+.pc10_instructions "     {M:Use {Y:B} button {G:to whip}}     "
+.pc10_instructions "                              "
+.pc10_instructions " {M:Collect weapons + red hearts} "
+.pc10_instructions " {M:Use {Y:B} button + Control {R:UP} to} "
+.pc10_instructions "  {M:use new weapon in red box}   "
+.pc10_instructions "                              "
+.pc10_instructions "{G:Small Hearts} = 1 extra shot   "
+.pc10_instructions "               per new weapon "
+.pc10_instructions "                              "
+.pc10_instructions "{G:Large Hearts} = 5 extra shots  "
+.pc10_instructions "               per new weapon "
+.pc10_instructions "                              "
+.pc10_instructions " {O:Press {R:ENTER} to see next page!}"
+.pc10_instructions "         {R:CASTLEVANIA}      2/2 "
+.pc10_instructions "                              "
+.pc10_instructions "           {R:WEAPONS}            "
+.pc10_instructions "                              "
+.pc10_instructions "{G:Stop Watch} = Freezes creatures"
+.pc10_instructions "{G:Sword} = Cuts creatures power  "
+.pc10_instructions "{G:Axe} = Chops creatures power   "
+.pc10_instructions "{G:Fire Bomb} = Burns creatures   "
+.pc10_instructions "{G:Boomerang} = Returning weapon  "
+.pc10_instructions "{G:Cross} = Destroys all creatures"
+.pc10_instructions "                              "
+.pc10_instructions "{G:Money Bag} = Bonus Points      "
+.pc10_instructions "{G: II Block} = 2x weapon power   "
+.pc10_instructions "{G:III Block} = 3x weapon power   "
+.pc10_instructions "                              "
+.pc10_instructions "{R:HINTS}                         "
+.pc10_instructions " {M:Whip blocks to find Pork chop}"
+.pc10_instructions "  {M:and regain power}            "
+.pc10_instructions "{M:Clear stage Kill head creature}"
+.pc10_instructions " {M:Get Red Ball to regain power} "
+.pc10_instructions "                              "
+.pc10_instructions " {O:Press {R:ENTER} return to page 1} "
+;---
+.end
