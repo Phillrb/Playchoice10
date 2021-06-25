@@ -1,0 +1,32 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " BATTLETOADS _______@/@@"  ;2-players (face symbols)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "         {R:BATTLETOADS}          "
+.pc10_instructions "                              "
+.pc10_instructions " Okay 'toads! Let's get {O:EVEN!} "
+.pc10_instructions "                              "
+.pc10_instructions " {M:The evil Dark Queen has}      "
+.pc10_instructions " {M:kidnapped your best buddy}    "
+.pc10_instructions " {M:and the best looking girl}    "
+.pc10_instructions " {M:this side of the}             "
+.pc10_instructions " {M:Mazallion Star Cluster.}      "
+.pc10_instructions "                              "
+.pc10_instructions "--- Control Toads ---         "
+.pc10_instructions "Move direction                "
+.pc10_instructions "  = Control in direction      "
+.pc10_instructions "Jump                          "
+.pc10_instructions "  = Press {Y:A}                   "
+.pc10_instructions "Action                        "
+.pc10_instructions "  = Press {Y:B}                   "
+.pc10_instructions "                              "
+.pc10_instructions " {G:So, strap on your Blaster,}   "
+.pc10_instructions " {G:power-up the Toadster,}       "
+.pc10_instructions " {G:and get on down to}           "
+.pc10_instructions " {G:the Dark Queen's Planet!}     "
+.pc10_instructions "                              "
+;---
+.end

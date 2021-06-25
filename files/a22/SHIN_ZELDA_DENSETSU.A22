@@ -1,0 +1,32 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " SHIN ZELDA DENSETSU    "  ;(no symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "     {R:SHIN ZELDA DENSETSU}      "
+.pc10_instructions "                              "
+.pc10_instructions "  {G:Guide {O:Princess Zelda} on a}   "
+.pc10_instructions "  {G:quest to rescue {M:Link} from}   "
+.pc10_instructions "        {G:the evil {R:Ganon}}        "
+.pc10_instructions "                              "
+.pc10_instructions "   A complete overwrite of    "
+.pc10_instructions "     The Legend of Zelda!     "
+.pc10_instructions "                              "
+.pc10_instructions " {M:The overworld has been}       "
+.pc10_instructions " {M:completely revamped, with}    "
+.pc10_instructions " {M:few landmarks or routes}      "
+.pc10_instructions " {M:recognizable from the}        "
+.pc10_instructions " {M:original game, if any.}       "
+.pc10_instructions " {M:Dungeons are identified using}"
+.pc10_instructions " {M:symbols of the Zodiac.}       "
+.pc10_instructions "                              "
+.pc10_instructions "       --- {O:Credits} ---        "
+.pc10_instructions "                              "
+.pc10_instructions "         Chris Miller         "
+.pc10_instructions "          Lord Steak          "
+.pc10_instructions "         Darklink7884         "
+.pc10_instructions "                              "
+;---
+.end
