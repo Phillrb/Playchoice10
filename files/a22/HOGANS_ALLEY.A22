@@ -9,7 +9,7 @@
 .pc10_instructions "                              "
 .pc10_instructions " Select game and press start! "
 .pc10_instructions "                              "
-.pc10_instructions "Game A/B : {O:Police Academy      "
+.pc10_instructions "Game A/B : {O:Police Academy}     "
 .pc10_instructions "           {O:Training Course}    "
 .pc10_instructions "  {M:Draw the gun from the}       "
 .pc10_instructions "  {M:holster.  Shoot gangsters}   "

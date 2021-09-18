@@ -1,0 +1,53 @@
+;BSD 3-Clause License
+;Copyright (c) 2021, Phillip Riscombe-Burton
+;
+;------------------
+.pc10_title " PAPERBOY __________    "  ;(no symbol)
+.pc10_demo_duration 60*15, 60*100
+;---
+.pc10_instructions "           {R:PAPERBOY}       1/2 "
+.pc10_instructions "  {M:Delivering newspapers to}    "
+.pc10_instructions "  {M:loyal customers isn't as}    "
+.pc10_instructions "  {M:easy as it sounds! You must} "
+.pc10_instructions "  {M:use all your riding skills}  "
+.pc10_instructions "  {M:to survive the route through}"
+.pc10_instructions "  {M:the jungles of suburbia!}    "
+.pc10_instructions "                              "
+.pc10_instructions "  {G:Customers}                   "
+.pc10_instructions "  Yellow, white or blue houses"
+.pc10_instructions "  with paperboxes in front.   "
+.pc10_instructions "  Be sure to deliver or lose  "
+.pc10_instructions "  subscriptions!              "
+.pc10_instructions "                              "
+.pc10_instructions "  {G:Training Course}             "
+.pc10_instructions "  Show off your stuff on the  "
+.pc10_instructions "  end {O:Training Course} track!  "
+.pc10_instructions "  45 secs to throw papers at  "
+.pc10_instructions "  targets and weave your way  "
+.pc10_instructions "  to the end. Jump ramps to   "
+.pc10_instructions "  get more papers. {O:Be quick!}  "
+.pc10_instructions " {O:Press {R:ENTER} to see next page!}"
+.pc10_instructions "           {R:PAPERBOY}       2/2 "
+.pc10_instructions "  {G:Controls}                    "
+.pc10_instructions "  Accelerate/Decelerate       "
+.pc10_instructions "   = Hold Control Up/Down     "
+.pc10_instructions "  Move in Direction           "
+.pc10_instructions "   = Control Left/Right       "
+.pc10_instructions "  Throw paper                 "
+.pc10_instructions "   = Press {Y:A} or {Y:B}             "
+.pc10_instructions "                              "
+.pc10_instructions "  {M:Watch out for a variety of}  "
+.pc10_instructions "  {M:obstacles on the street or}  "
+.pc10_instructions "  {M:you'll crash your bike!}     "
+.pc10_instructions "                              "
+.pc10_instructions "  {G:Points}                      "
+.pc10_instructions "  Subscriber's paperbox   {R:700} "
+.pc10_instructions "  Subscriber's porch      {R:300} "
+.pc10_instructions "  Non-subscriber's window {R:300} "
+.pc10_instructions "  Bush tombstone lamp bin {R:300} "
+.pc10_instructions "  Round training target   {R:200} "
+.pc10_instructions "  Box training target     {R:100} "
+.pc10_instructions "  Extra papers bundle      {R:50} "
+.pc10_instructions " {O:Press {R:ENTER} return to page 1} "
+;---
+.end
