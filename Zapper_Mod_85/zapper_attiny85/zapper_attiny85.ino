@@ -1,6 +1,6 @@
 
 const int ACTION_PIN = 0;
-const int ZAPPER_FIRE_MIN_MS = 300;
+const int ZAPPER_FIRE_MIN_MS = 100;
 
 void setup() {
 
